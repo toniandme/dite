@@ -1,0 +1,407 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Century Gothic;
+}
+header{
+	background-image:linear-gradient(rgba(3, 65, 6, 0.5),rgba(0,0,0,0.5)), url(../dauin\ header.jpg);
+	height: 80vh;
+	background-size: cover;
+	background-position: center;
+	min-height: 100px;
+}
+
+.navbar {
+	font-size: 15px;
+	
+}
+/* Styling for navbar links */
+.navbar-nav .nav-link {
+    transition: color 0.3s, background-color 0.3s; 
+	font-family: "Lucida Console", "Courier New", monospace;
+}
+
+/* Hover effect for navbar links */
+.navbar-nav .nav-link:hover {
+    color: #fff; 
+    background-color: rgba(0, 0, 0, 0.2); 
+}
+
+.logo img{
+	float: left;
+	width: 150px;
+	height: auto;
+}
+
+
+/* Styling for the hero section */
+.hero-section {
+   
+	background-color: transparent;
+    color: #fff; 
+    padding: 100px 0; 
+}
+
+/* Center the content horizontally and vertically */
+.hero-section .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for the title */
+.hero-section .title h1 {
+    font-size: 3.5rem; 
+    margin-bottom: 20px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+/* Styling for the buttons */
+.hero-section .button .btn {
+    margin-right: 10px; 
+    font-size: 1.2rem; 
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    /* Reduce padding on smaller screens */
+    .hero-section {
+        padding: 80px 0;
+    }
+
+    /* Adjust font size for smaller screens */
+    .hero-section .title h1 {
+        font-size: 2.8rem;
+    }
+
+    /* Center align buttons on smaller screens */
+    .hero-section .button {
+        text-align: center;
+    }
+}
+/* Styling for the video section */
+.video-section {
+    padding: 50px 0; 
+    background-color: #f9f9f9;
+}
+
+/* Styling for the row */
+.video-section .row {
+    align-items: center;
+}
+
+/* Styling for the video wrapper */
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; 
+}
+
+.video-wrapper iframe {
+    position: absolute;
+	border-radius: 10px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Styling for the description */
+.description {
+    padding: 0 30px; 
+}
+
+.description h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.description p {
+    color: #060606;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px; 
+}
+
+/* Styling for the footer */
+.footer {
+    background-color: #007bff; 
+    color: #fff;
+    padding: 50px 0;
+}
+
+/* Footer container */
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Footer columns */
+.footer .col-md-4 {
+    text-align: center;
+}
+
+/* Footer headings */
+.footer h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Footer links */
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer ul li a:hover {
+    color: #ffc107;
+}
+
+/* Social icons */
+.social-icons {
+    list-style: none;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons li:last-child {
+    margin-right: 0;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ffc107;
+}
+
+/* Map location iframe */
+.footer iframe {
+    width: 100%;
+    height: 200px; 
+    border: none;
+}
+
+/* Developer section styles */
+#developer {
+    padding: 50px 0;
+}
+
+/* Developer image container */
+.about-col-1 img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* Developer information container */
+.about-col-2 {
+    padding-left: 30px;
+}
+
+/* Developer section heading */
+.sub-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333; 
+}
+
+/* Developer section text */
+.about-col-2 p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #666; 
+}
+
+/* Developer section tab titles */
+.tab-titles {
+    margin-bottom: 20px;
+}
+
+.tab-links {
+    display: inline-block;
+    margin-right: 20px;
+    cursor: pointer;
+    color: #007bff; 
+    transition: color 0.3s;
+}
+
+.tab-links.active-link {
+    font-weight: bold;
+    color: #333; 
+}
+
+.tab-links:hover {
+    color: #0056b3; 
+}
+
+/* Developer section tab contents */
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+.tab-contents ul {
+    list-style: none;
+}
+
+.tab-contents ul li {
+    margin-bottom: 15px;
+    color: #666; 
+}
+
+.tab-contents ul li span {
+    font-weight: bold;
+    color: #333; 
+}
+
+/* Custom CSS styles */
+section {
+    background-color: #f9f9f9; 
+    padding: 50px 0; 
+}
+
+.restaurant-container {
+    margin-bottom: 30px;
+    border: 1px solid #eaeaea; 
+    overflow: hidden; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.restaurant-img img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #eaeaea; 
+}
+.restaurant-description {
+    padding: 20px;
+}
+
+.restaurant-description h2 {
+    font-size: 24px;
+    margin-bottom: 15px; 
+    color: #333; 
+}
+
+.restaurant-description p {
+    font-size: 16px;
+    line-height: 1.8; 
+    color: #666; 
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; 
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    text-shadow: 2px 2px;
+}
+
+.card {
+    border: none; 
+    border-radius: 10px;
+    overflow: hidden; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.card img {
+    width: 100%; 
+    height: auto; 
+}
+
+
+.card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+
+.card {
+    margin-bottom: 20px;
+}
+/* Custom CSS for Destination Section */
+
+.destination-section {
+    padding: 80px 0; /* Add padding for better spacing */
+}
+
+.card {
+    border: none; /* Remove card border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for hover effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Add subtle hover effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.card-title {
+    font-size: 1.5rem; /* Increase title font size for better readability */
+    margin-bottom: 10px; /* Add margin below title */
+}
+
+.card-text {
+    font-size: 1rem; /* Adjust text font size */
+    line-height: 1.6; /* Improved readability with slightly increased line height */
+}
+
+.card-body {
+    padding: 20px; /* Add padding for better spacing */
+}
+
+.card-img-top {
+    border-top-left-radius: 10px; /* Rounded corners for image */
+    border-top-right-radius: 10px; /* Rounded corners for image */
+}
+
+.container {
+    max-width: 1200px; /* Limit container width */
+    margin: 0 auto; /* Center container */
+}
+
+/* Responsive styles */
+@media (max-width: 767px) {
+    .card {
+        margin-bottom: 30px; /* Add margin between cards for better spacing on small screens */
+    }
+}
+.image{
+    height: 450px;
+   
+}

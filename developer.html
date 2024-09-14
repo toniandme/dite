@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAUIN - Developer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="p1.png" width="30" height="30" class="d-inline-block align-top" alt="">
+               DAUIN
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html"><i class="fa fa-home"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="destination.html">Destination</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="developer.html">Developer</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-caret-down"></i> Delicacies <i class="fa fa-caret-down"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="resturant.html">Top Resturant</a>
+                            <a class="dropdown-item" href="gallery.html">Popular Food</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+	
+    <section id="developer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 about-col-1">
+                    <img class="image" src="toni2.jpg" alt="Developer Image">
+                </div>
+                <div class="col-md-6 about-col-2">
+                    <h1 class="sub-title">The Developer</h1>
+                    <p>
+                        I am an enthusiastic, self-motivated, reliable, responsible, and hardworking person.
+                        I am a mature team worker and adaptable to all challenging situations. I am able to work well
+                        both in a team environment as well as using my own initiative. I am able to work well under pressure and adhere to strict deadlines.       </p>
+    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab(event, 'Certificates and Recognition')">Certificates and Recognitions</p>
+                    </div>
+                    
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Soft Skills</span><br>Creating websites that can transform into millions.</li>
+                            <li><span>Hard Skills</span><br>Free Hand, Typography, Layout,  HTML/CSS, Sketching</li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024 - Current</span><br>Web Designer</li>
+                            <li><span>2012 - Current</span><br>Sales/Technician</li>
+                           
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="Certificates and Recognition"><ul>
+                        <li><span>Six Sigma Green Belt Certified</span><br></li>
+                        <li><span>Contact Service NC II</span><br>Silliman University</li>
+                        <li><span>Telecommunications Industry Expert Associate</span><br>Rochat School of Business (Switzerland)</li>
+                        <li><span>Business Analytics</span><br>University of the Philippines</li>
+                        
+                        <ul>
+            
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Contact Us</h3>
+                <p>Email: aaurgada.student @asiancollege.edu.ph</p>
+                <p>Phone: +639514832285</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h3>Location</h3>
+                <!-- Insert map location iframe here -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126046.40114888715!2d123.13150954226576!3d9.158980168908474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33ab5c8a077d1705%3A0xe7a534df2863122f!2sDauin%2C%20Negros%20Oriental!5e0!3m2!1sen!2sph!4v1713662151774!5m2!1sen!2sph" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+    // JavaScript function to handle tab switching
+    function opentab(event, tabName) {
+        // Get all elements with class name 'tab-contents' and hide them
+        var tabContents = document.getElementsByClassName("tab-contents");
+        for (var i = 0; i < tabContents.length; i++) {
+            tabContents[i].style.display = "none";
+        }
+
+        // Get all elements with class name 'tab-links' and remove the 'active-link' class
+        var tabLinks = document.getElementsByClassName("tab-links");
+        for (var i = 0; i < tabLinks.length; i++) {
+            tabLinks[i].classList.remove("active-link");
+        }
+
+        // Show the tab content corresponding to the clicked tab link
+        document.getElementById(tabName).style.display = "block";
+
+        // Add the 'active-link' class to the clicked tab link
+        event.target.classList.add("active-link");
+    }
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
